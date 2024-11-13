@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
     try {
         const client = await clientPromise;
-        const db = client.db("Cloud-Users");
+        const db = client.db("CloudData");
         const users = db.collection("users");
 
         // Find the user with the given token
