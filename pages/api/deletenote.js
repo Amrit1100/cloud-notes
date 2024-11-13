@@ -8,7 +8,7 @@ export default async function handler(req, res){
     let db
     try {
         client = await clientPromise
-        db = client.db("Cloud-Users")
+        db = client.db("CloudData")
     }catch(error){
         console.log(error)
     }
