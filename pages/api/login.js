@@ -9,7 +9,7 @@ export default async function handler(req,res){
         let password = req.body.password
     try{
         let client = await clientPromise
-        let db = client.db("Cloud-Users")
+        let db = client.db("CloudData")
         let users = db.collection("users")
         let user = await users.findOne({"email" :email})
         if(user){
