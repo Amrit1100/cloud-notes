@@ -17,7 +17,7 @@ export default async function handler(req,res){
         }else{
             try{
                 client = await clientPromise
-                db = client.db("Cloud-Users")
+                db = client.db("CloudData")
                 
             }catch{
                 res.status(400).json({error : "Error connecting to database"})
