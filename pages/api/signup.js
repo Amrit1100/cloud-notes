@@ -31,7 +31,7 @@ export default async function handler(req,res){
                         res.json({"signup" : "passwordnotmatching"})
                     }else{
                         let token = crypto.randomBytes(32).toString("hex")
-                        let verification_link = `http://localhost:3000/api/verify-email?token=${token}`
+                        let verification_link = `https://cloud-notes-one.vercel.app/api/verify-email?token=${token}`
                         await users.insertOne({
                             "name" : name,
                             "email" : email,
