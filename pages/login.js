@@ -90,11 +90,7 @@ export default function Login ({useremail, Setuseremail, login, Setlogin, name, 
                     Remember me
                   </label>
                 </div>
-                <div className="text-sm">
-                  <Link href="jajvascript:void(0);" className="text-pink-600 hover:underline font-semibold">
-                    Forgot your password?
-                  </Link>
-                </div>
+                
               </div>
 
               <div className="!mt-8">
